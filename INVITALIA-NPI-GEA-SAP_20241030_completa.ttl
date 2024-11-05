@@ -10,34 +10,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/italia/INVITALIA/onto/> .
 
-<https://w3id.org/italia/INVITALIA/onto/> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://w3id.org/italia/INVITALIA/onto/>:11 ;
-									    rdfs:label "Ontologia Invitalia"@it;
-										rdfs:comment "Ontologia sulla Gestione delle Misure di Invitalia."@it,
-										owl:versionInfo "Version 1.1 - Modified on 17 January 2024"@en,
-										"Versione 1.1 - Modificata il 17 Gennaio 2024"@it ;
-										rdfs:isDefinedBy <https://w3id.org/italia/INVITALIA/onto/>
-										adms:acronym "inps" ;
-    adms:hasFormalityLevel adms:Formal ;
-    adms:hasOntologyLanguage adms:OWL ;
-    adms:hasTask adms:AnnotationTask,
-        adms:QueryFormulationTask,
-        adms:SearchTask ;
-    adms:last <https://w3id.org/italia/INVITALIA/onto/>:11 ;
-    adms:officialURI "https://w3id.org/italia/INVITALIA/onto"^^xsd:anyURI ;
-    adms:prefix "invitalia_misure" ;
-    adms:status "catalogued",
-        "published" ;
-    adms:type adms:ServiceOnytology ;
-    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:description "Ontologia sulla Gestione delle Misure di Invitalia."@it;
-    dct:identifier "https://w3id.org/italia/INVITALIA/onto" ;
-    dct:issued "2024-01-16T00:00:00+00:00"^^xsd:dateTime ;
-    dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
-    dct:modified "2024-01-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:title "INVITALIA Ontology"@en,
-        "Ontologia di INVITALIA "@it .
+<https://w3id.org/italia/INVITALIA/onto/> rdf:type owl:Ontology.
 #################################################################
 #    Object Properties
 #################################################################
