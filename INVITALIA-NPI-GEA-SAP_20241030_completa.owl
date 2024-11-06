@@ -3,40 +3,33 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
->
+   xmlns:ns0="https://w3id.org/italia/onto/ADMS/"
+   xmlns:dcat="http://www.w3.org/ns/dcat#"
+   xmlns:dc="http://purl.org/dc/terms/">
 
-<owl:Ontology rdf:about="https://w3id.org/italia/social-security/onto/core/">
-    <owl:versionIRI rdf:resource="https://w3id.org/italia/social-security/onto/core/11"/>
+  <owl:Ontology rdf:about="https://w3id.org/italia/INVITALIA/">
+    <owl:versionIRI rdf:resource="https://w3id.org/italia/INVITALIA/1.1"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
-    <owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/"/>
-    <rdfs:label xml:lang="en">Core INPS Ontology</rdfs:label>
-    <rdfs:label xml:lang="it">Ontologia Core di INPS</rdfs:label>
-    <rdfs:comment xml:lang="it">Ontologia INPS relativa alle componenti del dominio funzionale dell'istituto comuni a procedure e servizi svolti dall'ente stesso. Tra di essi troviamo, ad esempio, le dislocazioni territoriali, come le sedi, e le entità astratte, come i ruoli.</rdfs:comment>
-    <rdfs:comment xml:lang="en">This is the ontology of the INPS Organization about components of the institution's functional domain common to procedures and services performed by the institution itself. These include, for example, territorial dislocations, such as locations, and abstract entities, such as roles.</rdfs:comment>
-    <owl:versionInfo xml:lang="en">Version 1.1 - Modified on 17 January 2024</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">Versione 1.1 - Modificata il 17 Gennaio 2024</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/social-security/onto/core/"/>
-    <ns0:acronym>inps</ns0:acronym>
+    <rdfs:label xml:lang="en">Invitalia Ontology</rdfs:label>
+    <rdfs:label xml:lang="it">Ontologia di INVITALIA</rdfs:label>
+    <rdfs:comment xml:lang="it">Ontologia INVITALIA relativa alle misure agevolative.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This is the ontology of the INVITALIA Organization.</rdfs:comment>
+    <owl:versionInfo xml:lang="en">Version 1.1 - Modified on 06 November 2024</owl:versionInfo>
+    <owl:versionInfo xml:lang="it">Versione 1.1 - Modificata il 06 November 2024</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/INVITALIA/"/>
+    <ns0:acronym>invitalia</ns0:acronym>
     <ns0:hasContributor rdf:resource="https://w3id.org/italia/social-security/data/organization/td"/>
     <ns0:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-    <ns0:hasKeyClass rdf:resource="https://w3id.org/italia/social-security/onto/core/RuoloDiAgente"/>
-    <ns0:hasKeyClass rdf:resource="https://w3id.org/italia/social-security/onto/core/RuoloDiOrganizzazione"/>
-    <ns0:hasKeyClass rdf:resource="https://w3id.org/italia/social-security/onto/core/RuoloDiPersona"/>
-    <ns0:hasKeyClass rdf:resource="https://w3id.org/italia/social-security/onto/core/SedeINPS"/>
     <ns0:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-    <ns0:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/social-security/data/core/distribution/CORE-N-TRIPLES"/>
-    <ns0:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/social-security/data/core/distribution/CORE-RDF-TURTLE"/>
-    <ns0:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/social-security/data/core/distribution/CORE-RDF-XML"/>
     <ns0:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
     <ns0:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
     <ns0:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-    <ns0:last rdf:resource="https://w3id.org/italia/social-security/onto/core/1_1"/>
-    <ns0:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/social-security/onto/core</ns0:officialURI>
-    <ns0:prefix>inpsc</ns0:prefix>
-    <ns0:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
+    <ns0:last rdf:resource="https://w3id.org/italia/INVITALIA/1.1"/>
+    <ns0:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/INVITALIA/</ns0:officialURI>
+    <ns0:prefix>invitalia</ns0:prefix>
     <ns0:status>catalogued</ns0:status>
     <ns0:status>published</ns0:status>
     <ns0:target xml:lang="it">Cittadini</ns0:target>
@@ -44,28 +37,26 @@
     <ns0:target xml:lang="it">Pubbliche Amministrazioni</ns0:target>
     <ns0:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOnytology"/>
     <dcat:contactPoint rdf:resource="https://w3id.org/italia/social-security/data/organization/DirezioneCentraleTII"/>
-    <dcat:keyword xml:lang="en">Agent</dcat:keyword>
-    <dcat:keyword xml:lang="it">Agente</dcat:keyword>
-    <dcat:keyword xml:lang="en">INPS Office</dcat:keyword>
+    <dcat:keyword xml:lang="it">Misura</dcat:keyword>
     <dcat:keyword xml:lang="en">Organization</dcat:keyword>
     <dcat:keyword xml:lang="it">Organizzazione</dcat:keyword>
     <dcat:keyword xml:lang="en">Person</dcat:keyword>
     <dcat:keyword xml:lang="it">Persona</dcat:keyword>
-    <dcat:keyword xml:lang="it">Sede INPS</dcat:keyword>
+    <dcat:keyword xml:lang="it">Agevolazione</dcat:keyword>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
     <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
-    <dc:creator rdf:resource="https://w3id.org/italia/social-security/data/organization/inps"/>
-    <dc:description xml:lang="it">Ontologia INPS relativa alle componenti del dominio funzionale dell'istituto comuni a procedure e servizi svolti dall'ente stesso. Tra di essi troviamo, ad esempio, le dislocazioni territoriali, come le sedi, e le entità astratte, come i ruoli.</dc:description>
-    <dc:description xml:lang="en">This is the ontology of the INPS Organization about components of the institution's functional domain common to procedures and services performed by the institution itself. These include, for example, territorial dislocations, such as locations, and abstract entities, such as roles.</dc:description>
+    <dc:creator rdf:resource="INVITALIA"/>
+    <dc:description xml:lang="it">Ontologia INVITALIA sulle misure agevolative alle Imprese.</dc:description>
+    <dc:description xml:lang="en">This is the ontology of the INVITALIA Organization</dc:description>
     <dc:identifier>https://w3id.org/italia/social-security/onto/core</dc:identifier>
     <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-16T00:00:00+00:00</dc:issued>
     <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
     <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
     <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-17T00:00:00+00:00</dc:modified>
-    <dc:publisher rdf:resource="https://w3id.org/italia/social-security/data/organization/inps"/>
-    <dc:rightsHolder rdf:resource="https://w3id.org/italia/social-security/data/organization/inps"/>
-    <dc:title xml:lang="en">Core INPS Ontology</dc:title>
-    <dc:title xml:lang="it">Ontologia Core di INPS </dc:title>
+    <dc:publisher rdf:resource="INVITALIA"/>
+    <dc:rightsHolder rdf:resource="INVITALIA"/>
+    <dc:title xml:lang="en">INVITALIA Ontology</dc:title>
+    <dc:title xml:lang="it">Ontologia di INVITALIA </dc:title>
   </owl:Ontology>
   <rdf:Description rdf:about="https://w3id.org/italia/INVITALIA/PartecipanteProgettoRicercaSviluppo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
